@@ -26,15 +26,33 @@ export default function RootLayout({ children }: Readonly<{children: React.React
                             </div>
 
                             {/* Le Bouton Accueil */}
-                            <button className="flex justify-center items-center text-center font-semibold gap-2 bg-white text-primary px-4 py-2 rounded-lg w-full cursor-pointer shadow">
-                            Accueil
-                            </button>
+                            <button className="flex justify-center items-center text-center font-sora font-semibold gap-2 bg-white text-primary px-4 py-2 rounded-lg w-full cursor-pointer shadow">Accueil</button>
+                        </div>
+
+                        {/* Milieu : Carte Administrateur */}
+                        <div className="bg-white rounded-lg overflow-hidden">
+                            {/* Bloc bleu */}
+                            <div className="bg-primary text-white text-center py-8 font-bold  font-sora m-4 rounded-t-lg">Administrateur P.</div>
+
+                            {/* Infos */}
+                            <div className="p-4 flex flex-col gap-3">
+                                <div>
+                                    <p className="text-primary font-bold font-sora text-sm">Nom</p>
+                                    <p className="text-gray-600 text-sm font-sora">Administrateur P.</p>
+                                </div>
+                                <div>
+                                    <p className="text-primary font-bold font-sora text-sm">Prénom</p>
+                                    <p className="text-gray-600 text-sm font-sora">Administrateur P.</p>
+                                </div>
+                                <div>
+                                    <p className="text-primary font-bold font-sora text-sm">Adresse email</p>
+                                    <p className="text-gray-600 text-sm font-sora">AdminP@gmail.com</p>
+                                </div>
+                             </div>
                         </div>
 
                         {/* Bas : Bouton de Déconnexion */}
-                        <button className="flex justify-center items-center text-center font-semibold bg-white text-primary px-4 py-2 rounded-lg w-full cursor-pointer shadow">
-                            Déconnexion
-                        </button>
+                        <button className="flex justify-center items-center text-center font-semibold bg-white text-primary px-4 py-2 rounded-lg w-full cursor-pointer font-sora shadow">Déconnexion</button>
                     </div>
                 </aside>
 
@@ -57,13 +75,13 @@ export default function RootLayout({ children }: Readonly<{children: React.React
                             <div className="w-10 h-10 rounded-full flex justify-center items-center text-white bg-primary"></div>
                             <div className="flex-col gap-0.5">
                                 <p className="text-base font-medium">Adimistrateur</p>
-                                <p className="text-sm ">Admin@gmail.com</p>
+                                <p className="text-sm">Admin@gmail.com</p>
                             </div>
                         </div>
                     </header>
 
                     {/*La Page principale elle-même (tableau de profils) */}
-                    <main className="flex-1 p-6">
+                    <main className="flex-1 p-6 overflow-y-auto">
                         {children}
                     </main>
                 </div>
