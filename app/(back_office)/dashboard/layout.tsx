@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "@/style/tailwind.css";
 
 
 
@@ -10,7 +11,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
 {
     return (
         <html lang="fr" >
-            <body >
+            <body className="bg-background">
                 {children}
             </body>
         </html>
