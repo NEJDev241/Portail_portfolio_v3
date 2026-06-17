@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Inclusive+Sans&display=swap");
+
 @import "tailwindcss";
 
 @theme {
     --color-primary: #1B407D;
     --color-background: #EFF0FE;
+    --font-holtwood: "Holtwood One SC", serif;
+    --font-inclusive: "Inclusive Sans", sans-serif;
 }

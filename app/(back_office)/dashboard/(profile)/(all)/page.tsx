@@ -32,7 +32,7 @@ export default function Dashboard() {
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold">Profils</h1>
-        <button className="bg-primary text-white px-4 py-2 rounded-lg cursor-pointer shadow ">
+        <button className="bg-primary text-white px-4 py-2 rounded-lg cursor-pointer shadow">
            Ajouter un profil +
         </button>
       </div>
@@ -51,7 +51,7 @@ export default function Dashboard() {
         </thead>
         <tbody>
           {profils.map((profil) => (
-            <tr key={profil.id} className="border-b hover:bg-gray-50">
+            <tr key={profil.id} className="shadow  hover:bg-gray-50 hover:border-b">
               <td className="p-4">
                 <div className="w-8 h-8 rounded-full flex justify-center items-center text-white bg-primary">{profil.id}</div>
               </td>
