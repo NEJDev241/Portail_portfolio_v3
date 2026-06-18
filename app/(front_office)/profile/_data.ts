@@ -12,8 +12,8 @@ export const developers: Developer[] = [
     {
         initials: "NEJ",
         name: "KOMBILA NZIENGUI Enock Japhet",
-        role: "Développeur web",
-        desc: "Experte en responsive design et accessibilité. J'adore transformer des maquettes Figma en code",
+        role: "Développeur Front-end",
+        desc: "Developpeur Front-end responsive design et accessibilité.",
         tags: ["HTML", "CSS", "Vue.js"],
         link: "https://nejdev241.github.io/portfolio/",
         photo: "/profile/photos/profile-japhet.png",
