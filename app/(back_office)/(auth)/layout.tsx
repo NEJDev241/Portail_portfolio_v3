@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+// import "@/public/bg-login.jpeg";
+import "@/style/tailwind.css";
 
 
 
@@ -10,7 +12,12 @@ export default function RootLayout({ children }: Readonly<{children: React.React
 {
     return (
         <html lang="fr" >
-            <body >
+            <body   className="min-h-screen flex items-center justify-center"
+            style={{ 
+                backgroundImage: "url('/bg-login.jpeg')", 
+                backgroundSize: "cover", 
+                backgroundPosition: "center" 
+            }}>
                 {children}
             </body>
         </html>
